@@ -232,6 +232,7 @@ input, select, textarea {
 
 		hr.major {
 			margin: 4.5em 0;
+			opacity: 100%;
 		}
 
 	blockquote {
@@ -2810,9 +2811,7 @@ input, select, textarea {
 }
 
 		.wrapper.style1 {
-			background-color: black;
 			color: #c8ece9;
-			opacity: 50%;
 		}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
@@ -3885,17 +3884,6 @@ input, select, textarea {
 		text-align: center;
 	}
 
-				@media screen and (max-width: 480px) {
-
-					#footer .copyright li {
-						border: 0;
-						display: block;
-						line-height: 1.65em;
-						margin: 0;
-						padding: 0.5em 0;
-					}
-
-				}
 
 		@media screen and (max-width: 980px) {
 
