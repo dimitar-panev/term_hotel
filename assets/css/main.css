@@ -2796,6 +2796,18 @@ input, select, textarea {
 	display: flex;
 	padding-bottom: 1.5rem;
 }
+.souvenirImages #souvenir1{
+	float: left;
+	margin: 2rem;
+}
+.souvenirImages #souvenir2{
+	float: right;
+	margin: 2rem;
+}
+.souvenirImages{
+	display: flex;
+	padding-bottom: 1.5rem;
+}
 
 		.wrapper.style1 {
 			background-color: black;
@@ -3334,7 +3346,7 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #21b2a6;
+		background: black;
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
