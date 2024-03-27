@@ -2781,10 +2781,21 @@ input, select, textarea {
 				}
 
 			}
-
 		.wrapper.alt {
 			padding: 0;
 		}
+.cafeteriaImages #cafeteria1{
+	float: left;
+	margin: 2rem;
+}
+.cafeteriaImages #cafeteria2{
+	float: right;
+	margin: 2rem;
+}
+.cafeteriaImages{
+	display: flex;
+	padding-bottom: 1.5rem;
+}
 
 		.wrapper.style1 {
 			background-color: black;
