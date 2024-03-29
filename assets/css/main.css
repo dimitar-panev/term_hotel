@@ -2809,6 +2809,18 @@ input, select, textarea {
 	display: flex;
 	padding-bottom: 1.5rem;
 }
+.gym{
+	display: flex;
+	padding-bottom: 1.5rem;
+}
+.gym #gym1{
+	float: left;
+	margin: 2rem;
+}
+.gym #gym2{
+	float: left;
+	margin: 2rem;
+}
 
 		.wrapper.style1 {
 			color: #c8ece9;
