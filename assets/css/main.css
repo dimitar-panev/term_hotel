@@ -3821,9 +3821,6 @@ input, select, textarea {
 	#main > header {
 		padding: 12em 0 10em 0 ;
 		background-image: url("../../images/bannerimg.jpg");
-		background-image: url("../../images/bannerimg.jpg");
-		background-image: url("../../images/bannerimg.jpg");
-		background-image: url("../../images/bannerimg.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3887,7 +3884,16 @@ input, select, textarea {
 	body.is-mobile #main > header {
 		background-attachment: scroll;
 	}
-
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+}
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
 /* Footer */
 
 	#footer {
@@ -3916,9 +3922,6 @@ input, select, textarea {
 /* Landing */
 
 	body.landing #page-wrapper {
-		background-image:url("../../images/bannerimg.jpg");
-		background-image:url("../../images/bannerimg.jpg");
-		background-image:url("../../images/bannerimg.jpg");
 		background-image:url("../../images/bannerimg.jpg");
 		background-attachment: fixed;
 		background-position: center center;
