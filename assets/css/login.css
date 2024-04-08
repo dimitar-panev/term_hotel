@@ -1,86 +1,80 @@
-
-body {
-    background-color: rgba(244, 91, 105, 1);
-    font-family: 'Asap', sans-serif;
+body{
+    padding:0;
+    margin:0;
 }
-
-.login {
-    overflow: hidden;
-    background-color: white;
-    padding: 40px 30px 30px 30px;
-    border-radius: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    transform: translate(-50%, -50%);
-    transition: transform 300ms, box-shadow 300ms;
-    box-shadow: 5px 10px 10px rgba(2, 128, 144, 1);
-
-    &::before, &::after {
-        content: '';
-        position: absolute;
-        width: 600px;
-        height: 600px;
-        border-top-left-radius: 40%;
-        border-top-right-radius: 45%;
-        border-bottom-left-radius: 35%;
-        border-bottom-right-radius: 40%;
-        z-index: -1;
-    }
-
-    &::before {
-        left: 40%;
-        bottom: -130%;
-        background-color: rgba(69, 105, 144, 1);
-        animation(wawes 6s infinite linear);
-    }
-
-    &::after {
-        left: 35%;
-        bottom: -125%;
-        background-color: rgba(2, 128, 144, 1);
-        animation(wawes 7s infinite);
-    }
-
-    > input {
-        font-family: 'Asap', sans-serif;
-        display: block;
-        border-radius: 5px;
-        font-size: 16px;
-        background: white;
-        width: 100%;
-        border: 0;
-        padding: 10px 10px;
-        margin: 15px -10px;
-    }
-
-    > button {
-        font-family: 'Asap', sans-serif;
-        cursor: pointer;
-        color: #fff;
-        font-size: 16px;
-        text-transform: uppercase;
-        width: 80px;
-        border: 0;
-        padding: 10px 0;
-        margin-top: 10px;
-        margin-left: -5px;
-        border-radius: 5px;
-        background-color: rgba(244, 91, 105, 1);
-        transition(background-color 300ms);
-
-        &:hover {
-            background-color: rgba(244, 91, 105, 1);
-        }
-    }
+.vid-container{
+    position:relative;
+    height:100vh;
+    overflow:hidden;
 }
-
-a {
-    text-decoration: none;
-    color: white;
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    font-size: 12px;
+.bgvid{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100vw;
+}
+.inner-container{
+    width:400px;
+    height:400px;
+    position:absolute;
+    top:calc(50vh - 200px);
+    left:calc(50vw - 200px);
+    overflow:hidden;
+}
+.bgvid.inner{
+    top:calc(-50vh + 200px);
+    left:calc(-50vw + 200px);
+    filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='10'%20/></filter></svg>#blur");
+    -webkit-filter:blur(10px);
+    -ms-filter: blur(10px);
+    -o-filter: blur(10px);
+    filter:blur(10px);
+}
+.box{
+    position:absolute;
+    height:100%;
+    width:100%;
+    font-family:Helvetica;
+    color:#fff;
+    background:rgba(0,0,0,0.13);
+    padding:30px 0px;
+}
+.box h1{
+    text-align:center;
+    margin:30px 0;
+    font-size:30px;
+}
+.box input{
+    display:block;
+    width:300px;
+    margin:20px auto;
+    padding:15px;
+    background:rgba(0,0,0,0.2);
+    color:#fff;
+    border:0;
+}
+.box input:focus,.box input:active,.box button:focus,.box button:active{
+    outline:none;
+}
+.box button{
+    background:#2ecc71;
+    border:0;
+    color:#fff;
+    padding:10px;
+    font-size:20px;
+    width:330px;
+    margin:20px auto;
+    display:block;
+    cursor:pointer;
+}
+.box button:active{
+    background:#27ae60;
+}
+.box p{
+    font-size:14px;
+    text-align:center;
+}
+.box p span{
+    cursor:pointer;
+    color:#666;
 }
