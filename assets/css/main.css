@@ -3938,11 +3938,8 @@ input, select, textarea {
 		background: none;
 	}
 
-	body.is-mobile.landing #banner
+	body.is-mobile.landing #banner,
 	body.is-mobile.landing .wrapper.style4 {
-		background-image: url("../../images/bannerimg.jpg");
-		background-image: url("../../images/bannerimg.jpg");
-		background-image: url("../../images/bannerimg.jpg");
 		background-image: url("../../images/bannerimg.jpg");
 		background-position: center center;
 		background-repeat: no-repeat;
