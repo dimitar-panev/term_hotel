@@ -1753,7 +1753,7 @@ input, select, textarea {
 	}
 
 	header p {
-		color: rgba(255, 255, 255, 0.5);
+		color: rgba(255, 255, 255);
 		position: relative;
 		top: -0.25em;
 	}
@@ -3430,7 +3430,7 @@ input, select, textarea {
 		}
 
 	body.is-menu-visible #page-wrapper {
-		opacity: 0.35;
+		opacity: 0.1;
 	}
 
 		body.is-menu-visible #page-wrapper:before {
@@ -3793,6 +3793,9 @@ input, select, textarea {
 				display: block;
 				text-align: center;
 			}
+#cta .inner p{
+	font-weight: bold;
+}
 
 				#cta .inner header {
 					padding-right: 0;
@@ -3837,6 +3840,7 @@ input, select, textarea {
 			color: inherit;
 			letter-spacing: 0.225em;
 			text-transform: uppercase;
+			font-weight: bold;
 			top: 0;
 		}
 
