@@ -2390,7 +2390,12 @@ input, select, textarea {
 			table.alt tfoot {
 				border-top: 0;
 			}
-
+.date #arrival, #depart{
+	color: black;
+}
+#save{
+	margin-top: 1rem;
+}
 /* Button */
 
 	input[type="submit"],
@@ -2786,11 +2791,9 @@ input, select, textarea {
 			padding: 0;
 		}
 .cafeteriaImages #cafeteria1{
-	float: left;
 	margin: 2rem;
 }
 .cafeteriaImages #cafeteria2{
-	float: right;
 	margin: 2rem;
 }
 .cafeteriaImages{
@@ -2798,11 +2801,9 @@ input, select, textarea {
 	padding-bottom: 1.5rem;
 }
 .souvenirImages #souvenir1{
-	float: left;
 	margin: 2rem;
 }
 .souvenirImages #souvenir2{
-	float: right;
 	margin: 2rem;
 }
 .souvenirImages{
@@ -2814,12 +2815,19 @@ input, select, textarea {
 	padding-bottom: 1.5rem;
 }
 .gym #gym1{
-	float: left;
+
 	margin: 2rem;
 }
 .gym #gym2{
-	float: left;
+
 	margin: 2rem;
+}
+.responsive {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+	clear: both;
+	display: table;
 }
 
 		.wrapper.style1 {
