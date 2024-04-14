@@ -2804,6 +2804,7 @@ input, select, textarea {
 	margin: 2rem;
 }
 .souvenirImages #souvenir2{
+
 	margin: 2rem;
 }
 .souvenirImages{
@@ -2829,7 +2830,11 @@ input, select, textarea {
 	clear: both;
 	display: table;
 }
-
+@media screen and (max-width: 500px) {
+	.responsive {
+		width: 100%;
+	}
+}
 		.wrapper.style1 {
 			color: #c8ece9;
 		}
