@@ -57,8 +57,8 @@
 										<h4>Cafeteria</h4>
 										<p>Hange also has a cafeteria that is located on the right side of the reception while you are facing it.</p>
 									<div class="cafeteriaImages">
-										<img id="cafeteria1" style="width: 527px; height: 350px;" src="./images/cafeteria1.jpeg" alt="">
-										<img id="cafeteria2" style="width: auto; height: 350px;" src="./images/cafeteria2.jpg" alt="">
+										<img class="responsive" id="cafeteria1" src="./images/cafeteria1.jpeg" alt="">
+										<img class="responsive" id="cafeteria2" src="./images/cafeteria2.jpg" alt="">
 									</div>
 									<h4>About the cafeteria:</h4>
 									<ol>
@@ -73,16 +73,16 @@
 									It is located behind the reception but if you can't find your way to it you can just ask someone from the reception
 										and they will guide you.</p>
 									<div class="souvenirImages">
-									<img id="souvenir1" style="width: auto; height: 350px;" src="./images/souvenir1.jpg" alt="">
-									<img id="souvenir2" style="width: auto; height: 350px;" src="./images/souvenir2.jpg" alt="">
+									<img class="responsive" id="souvenir1" src="./images/souvenir1.jpg" alt="">
+									<img class="responsive" id="souvenir2" src="./images/souvenir2.jpg" alt="">
 									</div>
 									<br>
 									<h4>Gym</h4>
 									<p>If you would like to exercise and train while on a vacation in our hotel, you can visit our gym. The 50 square feet gym is perfect for any
 										exercise because we got everything you need!</p>
 									<div class="gym">
-									<img id="gym1" style="width: auto; height: 350px" src="./images/gym1.jpg" alt="">
-									<img id="gym2" style="width: auto; height: 350px" src="./images/gym2.jpg" alt="">
+									<img class="responsive" id="gym1" src="./images/gym1.jpg" alt="">
+									<img class="responsive" id="gym2" src="./images/gym2.jpg" alt="">
 									</div>
 									<hr>
 								</section>
@@ -121,7 +121,7 @@
 												</tr>
 												<tr>
 													<td>Fifth Package</td>
-													<td>4 beds + breakfast, lunch and dinner + access to the gym</td>
+													<td>4 beds + breakfast, lunch and dinner</td>
 													<td>141.95$ per night</td>
 												</tr>
 											</tbody>
@@ -156,20 +156,56 @@
 												</tr>
 												<tr>
 													<td>King Four</td>
-													<td>Fourth package + pool and gym</td>
+													<td>Fourth package + pool and gym + spa + access to bikes</td>
 													<td>279.95$ per night</td>
 												</tr>
 												<tr>
 													<td>King Five</td>
-													<td>Fifth package + pool and gym</td>
+													<td>Fifth package + pool and gym + spa + access to bikes + option for a trip</td>
 													<td>299.95$ per night</td>
 												</tr>
 											</tbody>
 										</table>
 									</div>
 								</section>
+								<form>
+									<div class="date">
+										<label for="arrival">Set arrival and departure date</label>
+										<input type="date" id="arrival" name="date">
+										<input type="date" id="depart" name="date">
+										<button>Set</button>
+										<input type="reset">
+										<label for="rooms">Normal Packages</label>
+
+										<select name="rooms" id="rooms">
+											<option value="none">None</option>
+											<option value="1">First Package</option>
+											<option value="2">Second Package</option>
+											<option value="3">Third Package</option>
+											<option value="4">Fourth Package</option>
+											<option value="5">Fifth Package</option>
+										</select>
+
+										<label for="krooms">King Packages</label>
+
+										<select name="krooms" id="krooms">
+											<option value="none">None</option>
+											<option value="1">King One</option>
+											<option value="2">King Two</option>
+											<option value="3">King Three</option>
+											<option value="4">King Four</option>
+											<option value="5">King Five</option>
+
+										</select>
+
+										<button id="save">Save Option</button>
+									</div>
+								</form>
+								<br>
+								<br>
 
 								<section>
+
 									<h4>Send any question you have here:</h4>
 									<form method="post" action="#">
 										<div class="row gtr-uniform">
